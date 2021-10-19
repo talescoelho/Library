@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import '../css/Home.css';
 
 function Home() {
@@ -14,7 +16,10 @@ function Home() {
       <p className="login-forgot">Forgot password?</p>
 
       <p className="login-join">
-        Don't have account? <span className="join-span">Join Now</span>
+        Don't have account?{' '}
+        <Link to="/register" className="join-span">
+          Join Now
+        </Link>
       </p>
     </div>
   );

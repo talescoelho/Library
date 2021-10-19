@@ -90,13 +90,13 @@ Collection Authors
 
 # Levels:
 - ADM:  0 - Responsável por administrar todas as pessoas
-### ADM:  1 - Responsável por administrar os bibliotecários 0 ~ 2 e usuários 0 ~ 3
-#### ADM:  2 - Responsável por administrar os usuários 0 ~ 3
-## LIB:  0 - Pode adicionar e remover livros e autores. Pode emprestar livros. Pode alterar o nível dos usuários
-## LIB:  1 - Pode adicionar livros e autores. Pode emprestar livros. Pode alterar o nível dos usuários
-## LIB:  2 - Pode emprestar livros. Pode alterar o nível dos usuários
-## USER: 0 - usuário premium - 2 meses + sem atrazo na entrega - Pode emprestar até 3 livros por até 3 semanas
-## USER: 1 - usuário padrão - Pode emprestar até 2 livros por até 2 semanas
-## USER: 2 - usuário displicente 1 - atrazou a entrega de 1 livro - Pode emprestar até 1 livro por até 2 semanas
-## USER: 3 - usuário displicente 2 - atrazou a entrega de 2 livros + - Pode emprestar até 1 livro por até 1 semana
-## USER: 4 - usuário banido - perdeu/não entregou o livro
+- ADM:  1 - Responsável por administrar os bibliotecários 0 ~ 2 e usuários 0 ~ 3
+- ADM:  2 - Responsável por administrar os usuários 0 ~ 3
+- LIB:  0 - Pode adicionar e remover livros e autores. Pode emprestar livros. Pode alterar o nível dos usuários
+- LIB:  1 - Pode adicionar livros e autores. Pode emprestar livros. Pode alterar o nível dos usuários
+- LIB:  2 - Pode emprestar livros. Pode alterar o nível dos usuários
+- USER: 0 - usuário premium - 2 meses + sem atrazo na entrega - Pode emprestar até 3 livros por até 3 semanas
+- USER: 1 - usuário padrão - Pode emprestar até 2 livros por até 2 semanas
+- USER: 2 - usuário displicente 1 - atrazou a entrega de 1 livro - Pode emprestar até 1 livro por até 2 semanas
+- USER: 3 - usuário displicente 2 - atrazou a entrega de 2 livros + - Pode emprestar até 1 livro por até 1 semana
+- USER: 4 - usuário banido - perdeu/não entregou o livro

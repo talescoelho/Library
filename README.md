@@ -122,5 +122,5 @@ Collection Loans
 - A classificação deve ser: 0, 10, 12, 14, 16, 18
 
 # Empréstimo de livros:
-- Usuários não podem alugar livros que tenham a classificação maior que sua idade.
-- Usuários não podem alugar mais livros que o permitido pelos seus Levels.
+- Usuários não podem emprestar livros que tenham a classificação maior que sua idade.
+- Usuários não podem emprestar mais livros que o permitido pelos seus Levels.

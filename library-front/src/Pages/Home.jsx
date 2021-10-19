@@ -1,18 +1,21 @@
 import React from 'react';
+import '../css/Home.css';
 
 function Home() {
   return (
-    <div>
-      <h1>PLEASE SIGN IN</h1>
+    <div className="login-container">
+      <h1 className="login-title">PLEASE SIGN IN</h1>
 
-      <input placeholder="Email Address" />
-      <button>NEXT</button>
+      <input placeholder="Email Address" className="login-input" />
+      <input placeholder="Password" className="login-input" />
 
-      <p>forgot password?</p>
+      <button className="login-button">NEXT</button>
 
-      <p>Don't have account? Join Now</p>
+      <p className="login-forgot">Forgot password?</p>
 
-      <p>By signing up, you agree to our Terms of Service and Privacy Policy</p>
+      <p className="login-join">
+        Don't have account? <span className="join-span">Join Now</span>
+      </p>
     </div>
   );
 }

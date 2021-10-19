@@ -27,6 +27,7 @@ Collection Users
         "phoneNumber": ["string"]
       },
       "lastRead": "bookId",
+      "loansQuantity": "number",
       "readGenders": {
         "first": "string",
         "second": "string",
@@ -82,7 +83,7 @@ Collection Authors
     {
       "authorId": "id",
       "name": "string",
-      "lastName": "authorId"
+      "lastName": "string"
     }
   ]
 }

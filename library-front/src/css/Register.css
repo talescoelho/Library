@@ -1,38 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
+
 body {
   background-color: #f9f9f9;
 }
 
-.register-container {
-  text-align: center;
-  max-width: 94%;
-}
-
 .register-title {
   color: #252525;
-  margin-top: 8vh;
+  margin-top: 4vh;
+  text-align: center;
 }
 
-.register-input {
+.register-form {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #dddddd;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
   border: 1px solid #c4b8b8;
-  padding-left: 10px;
-  height: 7vh;
-  width: 45.25vh;
-  margin-top: 0.5vh;
-  margin: 0 10px;
 }
 
-.register-form-1 {
-  display: flex;
-  justify-content: center;
+.register-label {
+  display: block;
+  margin-top: 1.5vh;
+  margin-bottom: 3vh;
 }
 
-.register-input-1 {
-  max-width: 94%;
+.register-label > input {
   border: 1px solid #c4b8b8;
   padding-left: 10px;
   display: block;
   margin: 0 auto;
   height: 7vh;
   width: 95.5vh;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  max-width: 79.8%;
+}
+
+.register-button {
+  max-width: 80%;
+  cursor: pointer;
+  margin-top: 1vh;
+  width: 86vh;
+  display: block;
+  margin: 0 auto;
+  height: 7vh;
+  background-color: #ffd302;
+  font-size: 20px;
+  border: 0px;
+  margin-bottom: 5vh;
+}
+
+.register-header {
+  background-color: #252525;
+}
+
+.register-return {
+  width: 6vh;
   margin-top: 0.5vh;
+  margin-left: 3vh;
 }

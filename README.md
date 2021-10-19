@@ -126,8 +126,8 @@ Collection Loans
 - Usuários não podem emprestar mais livros que o permitido pelos seus Levels.
 
 # Páginas
-- [ ] Login
-- [ ] Cadastro
+- [x] Login
+- [x] Cadastro
 - Logado como ADM
 - [ ] Fazer alterações nos usuários e Bibliotecários
 - [ ] Fazer alterações nos Livros

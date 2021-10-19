@@ -87,6 +87,7 @@ Collection Authors
     }
   ]
 }
+```
 
 Collection Loans
 ```

@@ -60,7 +60,7 @@ Collection Books
         "second": "string",
         "others": ["string"]
       },
-      "classification": "string",
+      "classification": "number",
       "publishedDate": "date",
       "register": "date",
       "lastChange": "date",
@@ -87,6 +87,19 @@ Collection Authors
     }
   ]
 }
+
+Collection Loans
+```
+{
+  "loans": [
+    {
+      "userId": "userId",
+      "bookId": "bookId",
+      "loanDate": "date",
+      "returnDate": "date"
+    }
+  ]
+}
 ```
 
 # Levels:
@@ -101,3 +114,12 @@ Collection Authors
 - USER: 2 - usuário displicente 1 - atrazou a entrega de 1 livro - Pode emprestar até 1 livro por até 2 semanas
 - USER: 3 - usuário displicente 2 - atrazou a entrega de 2 livros + - Pode emprestar até 1 livro por até 1 semana
 - USER: 4 - usuário banido - perdeu/não entregou o livro
+
+# Cadastro de Livros:
+- Ao cadastrar um livro deve-se colocar quantos livros tem em estoque, para cada livro em estoque vai criar um livro com as mesmas caractesrísticas.
+- Ao cadastrar um livro se não existir o Author do livro deve ter a opção de cadastrar um novo author.
+- A classificação deve ser: 0, 10, 12, 14, 16, 18
+
+# Empréstimo de livros:
+- Usuários não podem alugar livros que tenham a classificação maior que sua idade.
+- Usuários não podem alugar mais livros que o permitido pelos seus Levels.

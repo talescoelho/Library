@@ -89,9 +89,9 @@ Collection Authors
 ```
 
 # Levels:
-## ADM:  0 - Responsável por administrar todas as pessoas
-## ADM:  1 - Responsável por administrar os bibliotecários 0 ~ 2 e usuários 0 ~ 3
-## ADM:  2 - Responsável por administrar os usuários 0 ~ 3
+- ADM:  0 - Responsável por administrar todas as pessoas
+### ADM:  1 - Responsável por administrar os bibliotecários 0 ~ 2 e usuários 0 ~ 3
+#### ADM:  2 - Responsável por administrar os usuários 0 ~ 3
 ## LIB:  0 - Pode adicionar e remover livros e autores. Pode emprestar livros. Pode alterar o nível dos usuários
 ## LIB:  1 - Pode adicionar livros e autores. Pode emprestar livros. Pode alterar o nível dos usuários
 ## LIB:  2 - Pode emprestar livros. Pode alterar o nível dos usuários

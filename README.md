@@ -124,3 +124,16 @@ Collection Loans
 # Empréstimo de livros:
 - Usuários não podem emprestar livros que tenham a classificação maior que sua idade.
 - Usuários não podem emprestar mais livros que o permitido pelos seus Levels.
+
+# Páginas
+- [ ] - Login
+- [ ] - Cadastro
+- Logado como ADM
+- [ ] - Fazer alterações nos usuários e Bibliotecários
+- [ ] - Fazer alterações nos Livros
+- Logado como Bibliotecário
+- [ ] - Fazer alterações nos usuários
+- [ ] - Fazer alterações nos Livros
+- Logado como Usuário
+- [ ] - Emprestar livros
+- [ ] - Alterar os próprios dados

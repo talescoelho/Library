@@ -23,7 +23,98 @@ const usersSchema = new Schema(
       type: Date,
       required: true,
     },
+    sex: {
+      type: String,
+      required: true,
+    },
+    register : {
+      type: String,
+      required: true,
+    },
+    lastChange : {
+      type: Date,
+      required: true,
+    },
+    addresses: {
+      postalCode: {
+        type: String,
+        required: true,
+      },
+      city: {
+        type: String,
+        required: true,
+      },
+      country: {
+        type: String,
+        required: true,
+      },
+      street: {
+        type: String,
+        required: true,
+      },
+      number: {
+        type: String,
+        required: true,
+      },
+      required: true,
+    },
+    contact: {
+      email : {
+        type: String,
+        required: true,
+      }, 
+      phoneNumber: {
+        type: String,
+        required: true,
+      }
+    },
+    lastRead: {
+      type: String,
+      required: false,
+    },
+    loansQuantity: {
+      type: Number,
+      required: false,
+    },
+    readGenders: {
+      first: {
+        type: String,
+        required: false,
+      },
+      second: {
+        type: String,
+        required: false,
+      },
+      third: {
+        type: String,
+        required: false,
+      },
+      required: false,
+    },
+    loans: [
+      {
+        book: {
+          type: String,
+          required: false,
+        },
+        loanDate: {
+          type: Date,
+          required: false,
+        },
+        returnDate: {
+          type: Date,
+          required: false,
+        },
+      }
+    ],
+    permission: {
+      'ADM || LIB || USER': {
+        type: Number,
+        required: true,
+      },
+      required: true,
+    }
   }
 );
 
-module.exports = mongoose.model();
+module.exports = mongoose.model('Users', usersSchema, 'users');

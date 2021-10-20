@@ -93,8 +93,8 @@ const usersSchema = new Schema(
     },
     loans: [
       {
-        book: {
-          type: String,
+        bookId: {
+          type: ObjectId,
           required: false,
         },
         loanDate: {
@@ -108,7 +108,11 @@ const usersSchema = new Schema(
       }
     ],
     permission: {
-      'ADM || LIB || USER': {
+      cargo: {
+        type: String,
+        required: true,
+      },
+      level : {
         type: Number,
         required: true,
       },

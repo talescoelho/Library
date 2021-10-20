@@ -18,7 +18,54 @@ const getByUsersId = async (req, res) => {
   );
 };
 
+const createNewUser = (req, res) => {
+  const { 
+    name, 
+    lastName,
+
+ } = req.body;
+
+  const newUser = new Users({
+    name,
+    lastName,
+    email,
+    cpf,
+    birth,
+    sex,
+    register,
+    lastChange,
+    address : {
+      postalCode,
+      city,
+      country,
+      district,
+      street,
+      number,
+    },
+    contact: {
+      email,
+      phoneNumber,
+    },
+    lastRead,
+    loansQuantity,
+    readGenders: {
+      
+    }
+  });
+
+  newUser
+    .save()
+    .then(() => res.status(200).json(newUser))
+    .catch((err) =>
+      res.status(400).json({
+        error: err,
+        message: 'Error creating account',
+      })
+    );
+};
+
 module.exports = {
   getAllUsers,
   getByUsersId,
+  createNewUser
 };

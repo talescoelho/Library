@@ -11,10 +11,6 @@ const usersSchema = new Schema(
       type: String,
       required: true,
     },
-    email: {
-      type: String,
-      required: true,
-    },
     cpf: {
       type: String,
       required: true,
@@ -28,12 +24,12 @@ const usersSchema = new Schema(
       required: true,
     },
     register : {
-      type: String,
-      required: true,
+      type: Date,
+      default: Date.now,
     },
     lastChange : {
       type: Date,
-      required: true,
+      default: Date.now,
     },
     addresses: {
       postalCode: {
@@ -53,10 +49,9 @@ const usersSchema = new Schema(
         required: true,
       },
       number: {
-        type: String,
+        type: Number,
         required: true,
       },
-      required: true,
     },
     contact: {
       email : {
@@ -94,7 +89,7 @@ const usersSchema = new Schema(
     loans: [
       {
         bookId: {
-          type: ObjectId,
+          type: String,
           required: false,
         },
         loanDate: {
@@ -116,9 +111,9 @@ const usersSchema = new Schema(
         type: Number,
         required: true,
       },
-      required: true,
     }
-  }
+  },
+  { versionKey: false }
 );
 
 module.exports = mongoose.model('Users', usersSchema, 'users');

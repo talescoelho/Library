@@ -22,13 +22,12 @@ const createNewUser = (req, res) => {
   const { 
     name,
     lastName,
-    email,
     cpf,
     birth,
     sex,
     register,
     lastChange,
-    address : {
+    addresses : {
       postalCode,
       city,
       country,
@@ -50,13 +49,12 @@ const createNewUser = (req, res) => {
   const newUser = new Users({
     name,
     lastName,
-    email,
     cpf,
     birth,
     sex,
     register,
     lastChange,
-    address : {
+    addresses : {
       postalCode,
       city,
       country,
@@ -87,15 +85,15 @@ const createNewUser = (req, res) => {
 
 const updateUser = async (req, res) => {
   const { id } = req.params;
-  const { name,
+  const {
+    name,
     lastName,
-    email,
     cpf,
     birth,
     sex,
     register,
     lastChange,
-    address : {
+    addresses : {
       postalCode,
       city,
       country,
@@ -116,13 +114,12 @@ const updateUser = async (req, res) => {
   const userUpdate = {
     name,
     lastName,
-    email,
     cpf,
     birth,
     sex,
     register,
     lastChange,
-    address : {
+    addresses : {
       postalCode,
       city,
       country,

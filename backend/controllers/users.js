@@ -20,10 +20,32 @@ const getByUsersId = async (req, res) => {
 
 const createNewUser = (req, res) => {
   const { 
-    name, 
+    name,
     lastName,
+    email,
+    cpf,
+    birth,
+    sex,
+    register,
+    lastChange,
+    address : {
+      postalCode,
+      city,
+      country,
+      district,
+      street,
+      number,
+    },
+    contact: {
+      email,
+      phoneNumber,
+    },
+    permission: {
+      cargo,
+      level,
+    }
 
- } = req.body;
+  } = req.body;
 
   const newUser = new Users({
     name,
@@ -46,10 +68,9 @@ const createNewUser = (req, res) => {
       email,
       phoneNumber,
     },
-    lastRead,
-    loansQuantity,
-    readGenders: {
-      
+    permission: {
+      cargo,
+      level,
     }
   });
 

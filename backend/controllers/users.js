@@ -154,9 +154,23 @@ const updateUser = async (req, res) => {
   }
 };
 
+const deleteUser = async (req, res) => {
+  const { id } = req.params;
+  await Users.findByIdAndRemove(id, (err, users) => {
+    if (err) return res.status(500).send(err);
+
+    const response = {
+      message: 'Todo successfully deleted',
+      users,
+    };
+    return res.status(200).send(response);
+  });
+};
+
 module.exports = {
   getAllUsers,
   getByUsersId,
   createNewUser,
-  updateUser
+  updateUser,
+  deleteUser,
 };

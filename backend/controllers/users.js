@@ -85,8 +85,78 @@ const createNewUser = (req, res) => {
     );
 };
 
+const updateUser = async (req, res) => {
+  const { id } = req.params;
+  const { name,
+    lastName,
+    email,
+    cpf,
+    birth,
+    sex,
+    register,
+    lastChange,
+    address : {
+      postalCode,
+      city,
+      country,
+      district,
+      street,
+      number,
+    },
+    contact: {
+      email,
+      phoneNumber,
+    },
+    permission: {
+      cargo,
+      level,
+    }
+  } = req.body;
+
+  const userUpdate = {
+    name,
+    lastName,
+    email,
+    cpf,
+    birth,
+    sex,
+    register,
+    lastChange,
+    address : {
+      postalCode,
+      city,
+      country,
+      district,
+      street,
+      number,
+    },
+    contact: {
+      email,
+      phoneNumber,
+    },
+    permission: {
+      cargo,
+      level,
+    }
+  }
+  try {
+    await Users.findByIdAndUpdate(
+      id,
+      userUpdate,
+      { new: true },
+      (err, user) => {
+        if (err) return res.status(500).send(err);
+        return res.status(200).json(user);
+      }
+    );
+  } catch (err) {
+    return err;
+  }
+};
+
 module.exports = {
   getAllUsers,
   getByUsersId,
-  createNewUser
+  createNewUser,
+  updateUser
 };

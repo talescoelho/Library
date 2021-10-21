@@ -5,6 +5,7 @@ require('dotenv').config();
 require('./backend/models/connection');
 
 const authorsRouter = require('./backend/routes/authors');
+const usersRouter = require('./backend/routes/users');
 
 const PORT = process.env.PORT || 4000;
 
@@ -14,5 +15,6 @@ app.use(express.json());
 app.get('/', (req, res) => res.send('Hello World!!!'));
 
 app.use('/authors', authorsRouter);
+app.use('/users', usersRouter);
 
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));
